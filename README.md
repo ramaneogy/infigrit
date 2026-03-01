@@ -55,3 +55,25 @@ To return back to your main timeline:
 ```bash
 git checkout main
 ```
+
+## How to Publish Updates to the Live Website (GitHub Pages)
+
+The website is currently live and hosted on GitHub Pages at: `https://ramaneogy.github.io/infigrit/`
+
+Whenever you make changes to your local files (e.g., editing `index.html` or updating an image) and you want those changes to show up on the public website, follow these simple steps:
+
+1. **Open your terminal** (e.g., PowerShell) and navigate to this folder (`c:\Data\Antigravity\eclass`).
+2. **Add all your changed files** to git:
+   ```bash
+   git add .
+   ```
+3. **Commit your changes** with a brief message describing what you did:
+   ```bash
+   git commit -m "Describe your update here (e.g., updated homepage text)"
+   ```
+4. **Push the changes** to GitHub:
+   ```bash
+   git push origin main
+   ```
+
+Within 30 to 60 seconds after pushing, GitHub Pages will automatically rebuild and your live website will reflect the newest changes. Anyone visiting the link will see the updated version!
